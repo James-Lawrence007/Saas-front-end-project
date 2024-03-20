@@ -64,6 +64,100 @@ img {
     margin-left: 10px;
 }
 
+/* Hero */
+.hero {
+    margin-bottom: 50px;
+}
+
+.hero .container {
+    background: url(../images/hero-bg.png) no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    height: 550px;
+}
+
+.hero .hero-content {
+    width: 70%;
+}
+
+.hero .hero-text {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+/* Video section */
+
+.video {
+    padding: 10px 0 40px;
+}
+
+.video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.video-preview {
+    margin-bottom: 20px;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 40px 0;
+}
+
+.testimonials .testimonials-heading {
+    width: 700px;
+    margin-bottom: 40px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+}
+
+.testimonials .card p:nth-child(2) {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* Pricing */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.pricing .pricing-card-subheading {
+    margin-bottom: 30px;
+}
+
+.pricing .pricing-card-price {
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc ;
+}
+
+.pricing ul {
+    margin: 30px 0;
+
+}
+
+.pricing ul li {
+    margin-bottom: 20px;
+}
+
+.pricing ul li i {
+    margin-right: 10px;
+}
+
+.pricing .pricing-footer {
+    margin: 30px 0;
+}
 /* Utility classes */
 .container {
     max-width: 1100px;
@@ -77,9 +171,17 @@ img {
     padding: 0 15px;
 
 }
+/* Card */
+.card {
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+}
+
 /* buttons */
 .btn {
-    display: block;
+    display: inline-block;
     padding: 13px 20px;
     background: var(--light-color);
     color: #333;
@@ -89,6 +191,7 @@ img {
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s;
+    text-align: center;
 }
 
 .btn:hover {
@@ -109,3 +212,57 @@ img {
     display: block;
     width: 100%;
 }
+/* Text classes */
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+}
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+}
+.text-md {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Background */
+.bg-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+.bg-light {
+    background: var(--light-color);
+    color: #333;
+}
+.bg-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+.bg-black {
+    background: #000;
+    color: #fff;
+}
+
